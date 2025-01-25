@@ -1,61 +1,154 @@
-/* *{
-    background-color: black;
-} */
-#body{
-    background-color: black;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
 }
-nav{
-    text-align: center;
-    background-color: rgb(32, 30, 30);
+body{
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color: #bbb;
+}
+/* ---------------------------------------------------------------------------------------------- */
+.container1{
     display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(133, 126, 126);
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0px 0px 50px 50px ;
+}
+/* ----------------------------------------------------------------------------------------------- */
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
+    padding: 20px;
+
 }
+/* ------------------------------------------------------------------------------------------------ */
 li{
-    display: inline-block;
-    padding: 0px 20px;
-}
-li a{
-    font-size: 20px;
-    text-decoration: none;
+    
+    flex-wrap: wrap;
+    background-color: black;
     color: white;
-    transition: all 0.3s ease 0s;
-}
-li a:hover{
-    color: chartreuse;
-}
-b{
-    color: white;
-    text-align: right;
-}
-input{
-    background-color:  rgb(32, 30, 30);;
-    color: white;
-    font-size: larger;
+    font-size: 1rem;
+    list-style: none;
+    padding: 8px;
     border-radius: 10px;
-    outline: none;
-    border: none;
-}
-::placeholder{
-    font-size: larger;
-    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.1s ease;
 }
 
-/* }
-input{
-    background-color: rgb(26, 25, 25);
-    color: white;
-    border-radius: 10px;
-    outline: none; 
+li:hover{
+    transform: scale(1.1);
+    background-color: transparent;
+    border: 1px solid black;
+
 }
-div > i{
-    color: white;
+li:active{
+    opacity: 0.5;
+
+}
+/* --------------------------------------------------------------------------------------------------- */
+input{
+    flex-wrap: wrap;
+    width: 8rem;
     padding: 5px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
 }
-header a{
+/* --------------------------------------------------------------------------------------------------- */
+button{
+    flex-wrap: wrap;
+    background-color: black;
     color: white;
-    padding: 14px 16px;
-    margin-top: 10px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+button:hover{
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+button:active{
+    opacity: 0.5;
 
-} */
+}
+/* --------------------------------------------------------------------------------------------------- */
+img{
+    cursor: pointer;
+
+}
+/* --------------------------------------------------------------------------------------------------- */
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+h1{
+    font-size: 40px;
+}
+/* --------------------------------------------------------------------------------------------------- */
+.container2{
+    width: 60vw;
+    height: fit-content;
+    background-color: rgb(156, 160, 160);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 10px;
+    row-gap: 30px;
+}
+.box{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(188, 188, 188);
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 1s ease;
+}
+.box:hover{
+    transform: scale(0.9);
+}
+
+.box>div>img{
+    border-radius: 7px;
+    padding: 2px;
+    padding-top: 5px;
+}
+.box>div>button{
+    background-color: rgb(4, 134, 4);
+}
+
+span{
+    background-color: transparent;
+    border: 1px solid;
+    border-radius:10px ;
+    padding: 3px;
+}
+
+
+
+footer{
+    width: 100%;
+    background-color: rgb(133, 126, 126);
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 50px 50px 0px 0px;
+}
