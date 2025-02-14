@@ -15,7 +15,8 @@ body{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(133, 126, 126);
+    /* background-color: rgb(133, 126, 126); */
+    background-color: #bbb;
     justify-content: space-around;
     align-items: center;
     border-radius: 0px 0px 50px 50px ;
@@ -41,7 +42,7 @@ li>a{
     padding: 8px;
     border-radius: 10px;
     cursor: pointer;
-    transition: all 0.1s ease;
+    transition: all 0.3s ease;
     text-decoration: none;
 }
 
@@ -150,7 +151,9 @@ span{
 
 footer{
     width: 100%;
-    background-color: rgb(133, 126, 126);
+    /* background-color: rgb(133, 126, 126); */
+    background-color: #bbb;
+
     text-align: center;
     margin-top: 20px;
     padding: 10px;
