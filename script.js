@@ -1,5 +1,5 @@
 document.getElementById("searchButton").addEventListener("click", function () {
-  let searchValue = document.getElementById("searchInput").value.trim(); //trim removes Extra Spaces
+  let searchValue = document.getElementById("searchInput").value.trim(); //Trim Removes Extra Spaces
 
   if (searchValue === "") {
     alert("Search field cannot be empty!");
