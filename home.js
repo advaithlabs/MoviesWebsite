@@ -1,20 +1,12 @@
-// document.getElementById("searchButton").addEventListener("click", function () {
-//   let searchValue = document.getElementById("searchInput").value.trim(); //Trim Removes Extra Spaces
-
-//   if (searchValue === "") {
-//     alert("Search field cannot be empty!");
-//   } else {
-//     // Proceed with the search logic
-//     console.log("Searching for:", searchValue);
-//     // You can redirect or fetch results based on the input
-//   }
-// });
 document.getElementById("searchButton").addEventListener("click", function () {
-  let searchValue = document.getElementById("searchInput").value.trim();
+  let searchValue = document.getElementById("searchInput").value.trim(); //Trim Removes Extra Spaces
+
   if (searchValue === "") {
-    alert("Search field Cannot be empty!");
+    alert("Search field cannot be empty!");
   } else {
-    console.log("Searching for : ", searchValue);
+    // Proceed with the search logic
+    console.log("Searching for:", searchValue);
+    // You can redirect or fetch results based on the input
   }
 });
 
