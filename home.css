@@ -158,3 +158,115 @@ footer {
     transition: all 0.1s ease;
 
 } */
+/* Mobile Devices (up to 480px) */
+@media only screen and (max-width: 480px) {
+  body {
+    max-height: none; /* Allow scrolling on smaller screens */
+  }
+
+  .container1 {
+    flex-direction: column; /* Stack items vertically */
+    border-radius: 0px 0px 30px 30px; /* Slightly smaller radius */
+    padding: 10px;
+  }
+
+  ul {
+    flex-direction: column; /* Vertical navigation */
+    width: 100%;
+    padding: 10px;
+  }
+
+  li > a {
+    font-size: 0.9rem; /* Slightly smaller text */
+    padding: 6px;
+    margin: 5px 0; /* Add spacing between items */
+  }
+
+  input {
+    width: 6rem; /* Smaller input field */
+  }
+
+  .container2 {
+    width: 90vw; /* Wider to fit small screens */
+    padding: 10px;
+    row-gap: 20px;
+  }
+
+  .box {
+    width: 100%; /* Full width for movie boxes */
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    font-size: 24px; /* Smaller heading */
+  }
+
+  footer {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Tablets (481px to 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .container1 {
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+
+  ul {
+    width: 95%;
+    justify-content: space-around; /* Spread items evenly */
+  }
+
+  li > a {
+    font-size: 1rem;
+    padding: 7px;
+  }
+
+  input {
+    width: 7rem;
+  }
+
+  .container2 {
+    width: 80vw;
+    padding: 15px;
+    justify-content: space-around;
+  }
+
+  .box {
+    width: 45%; /* Two boxes per row */
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+}
+
+/* Large Screens (above 768px) */
+@media only screen and (min-width: 769px) {
+  .container1 {
+    padding: 20px;
+  }
+
+  ul {
+    width: 90%;
+  }
+
+  .container2 {
+    width: 60vw; /* Maintain original width */
+    padding: 20px;
+  }
+
+  .box {
+    width: 22%; /* Four boxes per row */
+  }
+
+  h1 {
+    font-size: 40px; /* Original size */
+  }
+}
